@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/tungvo/catkin_ws/src/APP_ROBOT/build/devel/setup.sh
