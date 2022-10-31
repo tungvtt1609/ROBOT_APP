@@ -67,8 +67,8 @@ set(junbot_gui_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(junbot_gui_SOURCE_PREFIX /home/tungvo/catkin_ws/src/APP_ROBOT)
-  set(junbot_gui_DEVEL_PREFIX /home/tungvo/catkin_ws/src/APP_ROBOT/build/devel)
+  set(junbot_gui_SOURCE_PREFIX /home/tungvo/catkin_ws/src/ROBOT_APP)
+  set(junbot_gui_DEVEL_PREFIX /home/tungvo/catkin_ws/src/ROBOT_APP/build/devel)
   set(junbot_gui_INSTALL_PREFIX "")
   set(junbot_gui_PREFIX ${junbot_gui_DEVEL_PREFIX})
 else()

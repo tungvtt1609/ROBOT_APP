@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -44,7 +44,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -249,7 +249,7 @@ build geometry_msgs_generate_messages_cpp: phony
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -273,7 +273,7 @@ build tf_generate_messages_nodejs: phony
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -368,7 +368,7 @@ build roscpp_generate_messages_nodejs: phony
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -433,7 +433,7 @@ build std_msgs_generate_messages_py: phony
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/bin/cmake -H/home/tungvo/catkin_ws/src/APP_ROBOT -B/home/tungvo/catkin_ws/src/APP_ROBOT/build
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/bin/cmake -H/home/tungvo/catkin_ws/src/ROBOT_APP -B/home/tungvo/catkin_ws/src/ROBOT_APP/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -483,7 +483,7 @@ build junbot_gui_autogen: phony CMakeFiles/junbot_gui_autogen junbot_gui_autogen
 # Custom command for ui_mainwindow.h
 
 build ui_mainwindow.h: CUSTOM_COMMAND ../ui/mainwindow.ui || junbot_gui_autogen
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/lib/qt5/bin/uic -o /home/tungvo/catkin_ws/src/APP_ROBOT/build/ui_mainwindow.h /home/tungvo/catkin_ws/src/APP_ROBOT/ui/mainwindow.ui
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/lib/qt5/bin/uic -o /home/tungvo/catkin_ws/src/ROBOT_APP/build/ui_mainwindow.h /home/tungvo/catkin_ws/src/ROBOT_APP/ui/mainwindow.ui
   DESC = Generating ui_mainwindow.h
   restat = 1
 
@@ -491,7 +491,7 @@ build ui_mainwindow.h: CUSTOM_COMMAND ../ui/mainwindow.ui || junbot_gui_autogen
 # Custom command for ui_loginwidget.h
 
 build ui_loginwidget.h: CUSTOM_COMMAND ../ui/loginwidget.ui || junbot_gui_autogen
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/lib/qt5/bin/uic -o /home/tungvo/catkin_ws/src/APP_ROBOT/build/ui_loginwidget.h /home/tungvo/catkin_ws/src/APP_ROBOT/ui/loginwidget.ui
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/lib/qt5/bin/uic -o /home/tungvo/catkin_ws/src/ROBOT_APP/build/ui_loginwidget.h /home/tungvo/catkin_ws/src/ROBOT_APP/ui/loginwidget.ui
   DESC = Generating ui_loginwidget.h
   restat = 1
 
@@ -499,7 +499,7 @@ build ui_loginwidget.h: CUSTOM_COMMAND ../ui/loginwidget.ui || junbot_gui_autoge
 # Custom command for qrc_resources.cpp
 
 build qrc_resources.cpp: CUSTOM_COMMAND ../data/images/zoom.svg ../data/images/warning.png ../data/images/wait3.gif ../data/images/wait2.gif ../data/images/wait1.gif ../data/images/visibility.svg ../data/images/up_right_2.png ../data/images/up_right.png ../data/images/up_left_2.png ../data/images/up_left.png ../data/images/up_2.png ../data/images/up.png ../data/images/turnRight_l.png ../data/images/turnRight_hl.png ../data/images/turnRight_h.png ../data/images/turnLeft_l.png ../data/images/turnLeft_hl.png ../data/images/turnLeft_h.png ../data/images/toolbar_settings.png ../data/images/toolbar_other.png ../data/images/toolbar_map.png ../data/images/toolbar_dash.png ../data/images/status.png ../data/images/speed.png ../data/images/show.png ../data/images/setting2.png ../data/images/setting.png ../data/images/set_return.png ../data/images/rotate_cam.svg ../data/images/rotate.svg ../data/images/robot_yellow.png ../data/images/robot_red.png ../data/images/robot_blue.png ../data/images/robot2.png ../data/images/robot.png ../data/images/right_dock.svg ../data/images/right_2.png ../data/images/right.png ../data/images/return.png ../data/images/refreash.png ../data/images/power.png ../data/images/power-v.png ../data/images/plus.png ../data/images/package.png ../data/images/options.png ../data/images/online.png ../data/images/ok.png ../data/images/offline.png ../data/images/mutil_pose.png ../data/images/moverotate.svg ../data/images/move_z.svg ../data/images/move2d.svg ../data/images/move1d.svg ../data/images/minus.png ../data/images/min.png ../data/images/menu.svg ../data/images/max.png ../data/images/line.png ../data/images/left_dock.svg ../data/images/left_2.png ../data/images/left.png ../data/images/jiqiren-9.png ../data/images/jiqiren-8.png ../data/images/icon.png ../data/images/hide.png ../data/images/grid.png ../data/images/get_pos.png ../data/images/forbidden.svg ../data/images/false.png ../data/images/failed_display.png ../data/images/error.png ../data/images/down_right_2.png ../data/images/down_right.png ../data/images/down_left_2.png ../data/images/down_left.png ../data/images/down_2.png ../data/images/down.png ../data/images/display.png ../data/images/default_package_icon.png ../data/images/default_class_icon.png ../data/images/cursor_pos.png ../data/images/cursor_point.png ../data/images/cursor_mutile_pose.png ../data/images/cursor_move.png ../data/images/cursor.svg ../data/images/crosshair.svg ../data/images/control.png ../data/images/close.png ../data/images/all_control.png ../data/images/Slam.png ../data/images/Navigate.png ../data/images/status/status_warn.png ../data/images/status/status_normal.png ../data/images/status/status_none.png ../data/images/status/status_error.png ../data/images/classes/WrenchStamped.png ../data/images/classes/Views.svg ../data/images/classes/Tool$ Properties.png ../data/images/classes/Time.svg ../data/images/classes/Temperature.png ../data/images/classes/TF.png ../data/images/classes/SetInitialPose.png ../data/images/classes/SetGoal.png ../data/images/classes/Selection.png ../data/images/classes/Select.png ../data/images/classes/RobotModel.png ../data/images/classes/RobotLinkNoGeom.png ../data/images/classes/RobotLink.png ../data/images/classes/RobotJoint.png ../data/images/classes/RelativeHumidity.png ../data/images/classes/Range.png ../data/images/classes/PublishPoint.svg ../data/images/classes/PoseWithCovariance.png ../data/images/classes/PoseArray.png ../data/images/classes/Pose.png ../data/images/classes/Polygon.png ../data/images/classes/PointStamped.png ../data/images/classes/PointCloud2.png ../data/images/classes/PointCloud.png ../data/images/classes/Path.png ../data/images/classes/Odometry.png ../data/images/classes/MoveCamera.png ../data/images/classes/Measure.svg ../data/images/classes/MarkerArray.png ../data/images/classes/Marker.png ../data/images/classes/Map.png ../data/images/classes/LaserScan.png ../data/images/classes/InteractiveMarkers.png ../data/images/classes/Interact.png ../data/images/classes/Image.png ../data/images/classes/Illuminance.png ../data/images/classes/Help.svg ../data/images/classes/Group.png ../data/images/classes/GridCells.png ../data/images/classes/Grid.png ../data/images/classes/FocusCamera.svg ../data/images/classes/FluidPressure.png ../data/images/classes/Effort.png ../data/images/classes/Displays.svg ../data/images/classes/DepthCloud.png ../data/images/classes/Camera.png ../data/images/classes/Axes.png ../data/images/classes/src/TF.xcf ../data/images/classes/src/RobotModel.xcf ../data/images/classes/src/Range.xcf ../data/images/classes/src/PoseArray.xcf ../data/images/classes/src/Polygon.xcf ../data/images/classes/src/Poly.xcf ../data/images/classes/src/MarkerArray.xcf ../data/images/classes/src/Map.xcf ../data/images/classes/src/InteractiveMarker.xcf ../data/images/classes/src/GridCells.xcf ../data/images/classes/src/Axes.xcf ../data/images/classes/src/Arrow.xcf ../data/images/car/car_background.JPG ../data/images/car/car.JPG ../data/images/car/background.jpg ../data/images/robot_color.png ../data/images/robot_dark.png ../data/images/vacuum-cleaner.png ../data/images/stop.png ../data/images/stop-2.png ../data/background/background.gif ../data/background/test.jpg ../data/background/background.gif ../data/background/vmc_1.jpg resources.qrc.depends ../resources.qrc || junbot_gui_autogen
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/lib/qt5/bin/rcc --name resources --output /home/tungvo/catkin_ws/src/APP_ROBOT/build/qrc_resources.cpp /home/tungvo/catkin_ws/src/APP_ROBOT/resources.qrc
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/lib/qt5/bin/rcc --name resources --output /home/tungvo/catkin_ws/src/ROBOT_APP/build/qrc_resources.cpp /home/tungvo/catkin_ws/src/ROBOT_APP/resources.qrc
   DESC = Generating qrc_resources.cpp
   restat = 1
 
@@ -507,13 +507,13 @@ build qrc_resources.cpp: CUSTOM_COMMAND ../data/images/zoom.svg ../data/images/w
 # Custom command for CMakeFiles/clean_test_results
 
 build CMakeFiles/clean_test_results: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/tungvo/catkin_ws/src/APP_ROBOT/build/test_results
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/tungvo/catkin_ws/src/ROBOT_APP/build/test_results
 
 #############################################
 # Custom command for CMakeFiles/junbot_gui_autogen
 
 build CMakeFiles/junbot_gui_autogen junbot_gui_autogen/mocs_compilation.cpp: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build && /usr/bin/cmake -E cmake_autogen /home/tungvo/catkin_ws/src/APP_ROBOT/build/CMakeFiles/junbot_gui_autogen.dir Debug
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build && /usr/bin/cmake -E cmake_autogen /home/tungvo/catkin_ws/src/ROBOT_APP/build/CMakeFiles/junbot_gui_autogen.dir Debug
   DESC = Automatic MOC and RCC for target junbot_gui
   restat = 1
 # =============================================================================
@@ -526,7 +526,7 @@ build CMakeFiles/junbot_gui_autogen junbot_gui_autogen/mocs_compilation.cpp: CUS
 # Utility command for install/strip
 
 build gtest/CMakeFiles/install/strip.util: CUSTOM_COMMAND gtest/all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -536,7 +536,7 @@ build gtest/install/strip: phony gtest/CMakeFiles/install/strip.util
 # Utility command for install/local
 
 build gtest/CMakeFiles/install/local.util: CUSTOM_COMMAND gtest/all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -546,7 +546,7 @@ build gtest/install/local: phony gtest/CMakeFiles/install/local.util
 # Utility command for install
 
 build gtest/CMakeFiles/install.util: CUSTOM_COMMAND gtest/all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -561,7 +561,7 @@ build gtest/list_install_components: phony
 # Utility command for rebuild_cache
 
 build gtest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest && /usr/bin/cmake -H/home/tungvo/catkin_ws/src/APP_ROBOT -B/home/tungvo/catkin_ws/src/APP_ROBOT/build
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest && /usr/bin/cmake -H/home/tungvo/catkin_ws/src/ROBOT_APP -B/home/tungvo/catkin_ws/src/ROBOT_APP/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -571,7 +571,7 @@ build gtest/rebuild_cache: phony gtest/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build gtest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build gtest/edit_cache: phony gtest/CMakeFiles/edit_cache.util
@@ -580,7 +580,7 @@ build gtest/edit_cache: phony gtest/CMakeFiles/edit_cache.util
 # Utility command for test
 
 build gtest/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -595,7 +595,7 @@ build gtest/test: phony gtest/CMakeFiles/test.util
 # Utility command for install/strip
 
 build gtest/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND gtest/googlemock/all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -605,7 +605,7 @@ build gtest/googlemock/install/strip: phony gtest/googlemock/CMakeFiles/install/
 # Utility command for install/local
 
 build gtest/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND gtest/googlemock/all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -615,7 +615,7 @@ build gtest/googlemock/install/local: phony gtest/googlemock/CMakeFiles/install/
 # Utility command for install
 
 build gtest/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND gtest/googlemock/all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -630,7 +630,7 @@ build gtest/googlemock/list_install_components: phony
 # Utility command for rebuild_cache
 
 build gtest/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock && /usr/bin/cmake -H/home/tungvo/catkin_ws/src/APP_ROBOT -B/home/tungvo/catkin_ws/src/APP_ROBOT/build
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock && /usr/bin/cmake -H/home/tungvo/catkin_ws/src/ROBOT_APP -B/home/tungvo/catkin_ws/src/ROBOT_APP/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -640,7 +640,7 @@ build gtest/googlemock/rebuild_cache: phony gtest/googlemock/CMakeFiles/rebuild_
 # Utility command for edit_cache
 
 build gtest/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build gtest/googlemock/edit_cache: phony gtest/googlemock/CMakeFiles/edit_cache.util
@@ -649,7 +649,7 @@ build gtest/googlemock/edit_cache: phony gtest/googlemock/CMakeFiles/edit_cache.
 # Utility command for test
 
 build gtest/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -763,7 +763,7 @@ build gtest/googlemock/libgmock.so: CXX_SHARED_LIBRARY_LINKER__gmock gtest/googl
 # Utility command for install/strip
 
 build gtest/googlemock/gtest/CMakeFiles/install/strip.util: CUSTOM_COMMAND gtest/googlemock/gtest/all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -773,7 +773,7 @@ build gtest/googlemock/gtest/install/strip: phony gtest/googlemock/gtest/CMakeFi
 # Utility command for install/local
 
 build gtest/googlemock/gtest/CMakeFiles/install/local.util: CUSTOM_COMMAND gtest/googlemock/gtest/all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -783,7 +783,7 @@ build gtest/googlemock/gtest/install/local: phony gtest/googlemock/gtest/CMakeFi
 # Utility command for install
 
 build gtest/googlemock/gtest/CMakeFiles/install.util: CUSTOM_COMMAND gtest/googlemock/gtest/all
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -798,7 +798,7 @@ build gtest/googlemock/gtest/list_install_components: phony
 # Utility command for rebuild_cache
 
 build gtest/googlemock/gtest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest && /usr/bin/cmake -H/home/tungvo/catkin_ws/src/APP_ROBOT -B/home/tungvo/catkin_ws/src/APP_ROBOT/build
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest && /usr/bin/cmake -H/home/tungvo/catkin_ws/src/ROBOT_APP -B/home/tungvo/catkin_ws/src/ROBOT_APP/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -808,7 +808,7 @@ build gtest/googlemock/gtest/rebuild_cache: phony gtest/googlemock/gtest/CMakeFi
 # Utility command for edit_cache
 
 build gtest/googlemock/gtest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build gtest/googlemock/gtest/edit_cache: phony gtest/googlemock/gtest/CMakeFiles/edit_cache.util
@@ -817,7 +817,7 @@ build gtest/googlemock/gtest/edit_cache: phony gtest/googlemock/gtest/CMakeFiles
 # Utility command for test
 
 build gtest/googlemock/gtest/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -849,8 +849,8 @@ build gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_
 
 build gtest/googlemock/gtest/libgtest_main.so: CXX_SHARED_LIBRARY_LINKER__gtest_main gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o | gtest/googlemock/gtest/libgtest.so || gtest/googlemock/gtest/libgtest.so
   LANGUAGE_COMPILE_FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest/src:/home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest -lpthread gtest/googlemock/gtest/libgtest.so -lpthread
-  LINK_PATH = -L/home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest/src
+  LINK_LIBRARIES = -Wl,-rpath,/home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest/src:/home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest -lpthread gtest/googlemock/gtest/libgtest.so -lpthread
+  LINK_PATH = -L/home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest/src
   OBJECT_DIR = gtest/googlemock/gtest/CMakeFiles/gtest_main.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -886,8 +886,8 @@ build gtest/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPIL
 
 build gtest/googlemock/gtest/libgtest.so: CXX_SHARED_LIBRARY_LINKER__gtest gtest/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
   LANGUAGE_COMPILE_FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest/src -lpthread
-  LINK_PATH = -L/home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest/src
+  LINK_LIBRARIES = -Wl,-rpath,/home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest/src -lpthread
+  LINK_PATH = -L/home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest/src
   OBJECT_DIR = gtest/googlemock/gtest/CMakeFiles/gtest.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -915,19 +915,19 @@ build libgtest_main.so: phony gtest/googlemock/gtest/libgtest_main.so
 # =============================================================================
 
 #############################################
-# Folder: /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest
+# Folder: /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest
 
 build  gtest/all: phony gtest/googlemock/all
 # =============================================================================
 
 #############################################
-# Folder: /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock
+# Folder: /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock
 
 build  gtest/googlemock/all: phony gtest/googlemock/gtest/all
 # =============================================================================
 
 #############################################
-# Folder: /home/tungvo/catkin_ws/src/APP_ROBOT/build/gtest/googlemock/gtest
+# Folder: /home/tungvo/catkin_ws/src/ROBOT_APP/build/gtest/googlemock/gtest
 
 build  gtest/googlemock/gtest/all: phony
 # =============================================================================
